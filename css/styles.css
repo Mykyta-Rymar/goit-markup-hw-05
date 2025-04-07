@@ -677,6 +677,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-duration: 100ms;
+}
+
+.backdrop-btn:active .backdrop-btn-icon {
+    fill: #F4F4FD;
+}
+
+.backdrop-btn:active {
+    background-color: #404bbf;
 }
 
 .backdrop-btn-icon {
@@ -722,10 +731,16 @@ body {
     line-height: 1.16667;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
-    padding-left: 16px;
+    padding: 8px 16px;
     color:#2e2f42;
     width: 360px;
     height: 120px;
+    resize: none;
+}
+
+.backdrop-area.area-user-comment {
+    max-height: 138px;
+    margin-bottom: 16px;
 }
 
 .backdrop-btn-send {
@@ -755,10 +770,11 @@ body {
 .input-label {
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.16;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    display: inline-block;
+    display: block;
+    max-height: 14px;
     margin-bottom: 4px;
 }
 
@@ -776,4 +792,56 @@ body {
 
 .backdrop-area {
     
+}
+
+.comment::placeholder {
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16667;
+        letter-spacing: 0.04em;
+        color: rgba(46, 47, 66, 0.4);
+}
+
+.checkbox-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-label-a {
+    line-height: 1.33333;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #4d5ae5;
+}
+
+.checkbox-area {
+    text-wrap: nowrap;
+    margin-bottom: 24px;
+}
+
+.checkbox-box {
+    display: inline-block;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.checkbox-input:checked + .checkbox-label .checkbox-box {
+    background-color: #404bbf;
+    border: none;
+}
+
+.checkbox-box-icon {
+    position: absolute;
+    fill: #F4F4FD;
+    top: 4px;
+    left: 3px;
 }
