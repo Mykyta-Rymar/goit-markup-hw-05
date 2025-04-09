@@ -834,12 +834,12 @@ body {
     border-color: #4D5AE5;
 }
 
-.backdrop-input.comment {
+.comment {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    
+    color: rgba(46, 47, 66, 0.4);
     padding: 8px 16px;
     color:#2e2f42;
     width: 360px;
@@ -848,10 +848,6 @@ body {
     background-color: transparent;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.comment {
-    color: rgba(46, 47, 66, 0.4);
 }
 
 .backdrop-area.area-user-comment {
