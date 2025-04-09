@@ -645,6 +645,7 @@ body {
     max-width: 453px;
     max-height: 80px;
     display: flex;
+    flex-direction: column;
     margin-left: 80px;
 }
 
