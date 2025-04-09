@@ -756,6 +756,7 @@ body {
     background: #fcfcfc;
     transform: translate(-50%, -50%);
     padding: 72px 24px 24px 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop-btn {
@@ -822,6 +823,7 @@ body {
     background-color: transparent;
     color: #2e2f42;
     outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop-input:focus + .backdrop-svg {
